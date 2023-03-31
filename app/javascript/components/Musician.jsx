@@ -1,12 +1,12 @@
 import React from "react"
-import Instrument from '../components/Instrument';
+import InstrumentContainer from '../components/InstrumentContainer'
 
 function Musician(props) {
   return (
     <div>
       <p>
         {props.musician["name"]}
-        <Instrument instruments={props.instruments} />
+        <InstrumentContainer instruments={props.instruments} />
       </p>
     </div>
   );

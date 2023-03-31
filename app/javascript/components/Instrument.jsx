@@ -1,14 +1,11 @@
 import React from "react"
 
 function Instrument(props) {
-  const instruments = props.instruments.map((instrument) =>
-    <li>{instrument["name"]}</li>
-  )
   return (
     <div>
-      <p>
-        {instruments}
-      </p>
+      <li>
+        {props.instrument["name"]}
+      </li>
     </div>
   );
 }
