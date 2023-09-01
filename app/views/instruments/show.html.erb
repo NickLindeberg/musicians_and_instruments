@@ -1,0 +1,6 @@
+<div class="container-fluid">
+  <%= react_component("Instrument", { instrument: @instrument }) %>
+  <% @instrument.musicians.each do |musician| %>
+    <%= react_component("Musician", { musician: musician }) %>
+  <% end %>
+</div>

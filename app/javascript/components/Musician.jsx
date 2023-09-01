@@ -1,14 +1,11 @@
 import React from "react"
-import InstrumentContainer from '../components/InstrumentContainer'
-
 function Musician(props) {
   return (
-    <div>
-      <p>
+    <tbody>
+      <tr>
         {props.musician["name"]}
-        <InstrumentContainer instruments={props.instruments} />
-      </p>
-    </div>
+      </tr>
+    </tbody>
   );
 }
 
